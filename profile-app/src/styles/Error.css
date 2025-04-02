@@ -1,0 +1,34 @@
+.error-boundary {
+    text-align: center;
+    padding: 3rem;
+    background-color: #fff9f9;
+    border: 1px solid #ffeded;
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 600px;
+  }
+  
+  .error-boundary h2 {
+    color: #e74c3c;
+    margin-bottom: 1rem;
+  }
+  
+  .error-boundary p {
+    margin-bottom: 1.5rem;
+    color: #666;
+  }
+  
+  .retry-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+  }
+  
+  .retry-button:hover {
+    background-color: #2980b9;
+  }

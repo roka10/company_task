@@ -1,0 +1,111 @@
+.map-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .map-container h2 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 0.5rem;
+  }
+  
+  .selected-profile-info {
+    background-color: #e8f4fd;
+    padding: 0.75rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+  
+  .selected-profile-info p {
+    margin-bottom: 0.25rem;
+  }
+  
+  .map {
+    flex: 1;
+    min-height: 400px;
+    background-color: #eee;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #555;
+    font-style: italic;
+  }
+  
+  .map-marker {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+  }
+  
+  .marker-pin {
+    width: 20px;
+    height: 20px;
+    border-radius: 50% 50% 50% 0;
+    background-color: #e74c3c;
+    transform: rotate(-45deg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .marker-pin::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  
+  .marker-pulse {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin: -10px 0 0 -10px;
+    border-radius: 50%;
+    background-color: rgba(231, 76, 60, 0.2);
+    border: 2px solid rgba(231, 76, 60, 0.5);
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.8);
+      opacity: 0.8;
+    }
+    70% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+  }
+  
+  .map-info {
+    margin-top: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .no-results {
+    color: #999;
+    font-style: italic;
+    margin-top: 0.5rem;
+  }

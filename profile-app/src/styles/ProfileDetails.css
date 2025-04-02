@@ -1,0 +1,143 @@
+.profile-details {
+    max-width: 1000px;
+    margin: 2rem auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .back-button {
+    background-color: #f5f5f5;
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin-right: 1rem;
+    transition: background-color 0.2s;
+  }
+  
+  .back-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .profile-header h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #2c3e50;
+  }
+  
+  .profile-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .profile-main-info {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .profile-photo-large {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .profile-text-info {
+    flex: 1;
+  }
+  
+  .profile-text-info h3 {
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .profile-text-info p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .profile-interests h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .interests-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .interest-tag {
+    background-color: #f0f7ff;
+    color: #3498db;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .profile-location h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .mini-map {
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .coordinates {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .error-container {
+    text-align: center;
+    padding: 3rem;
+  }
+  
+  .error-container h2 {
+    color: #e74c3c;
+    margin-bottom: 1rem;
+  }
+  
+  .error-container p {
+    margin-bottom: 1.5rem;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .profile-details {
+      margin: 1rem;
+      padding: 1rem;
+    }
+    
+    .profile-main-info {
+      flex-direction: column;
+    }
+    
+    .profile-photo-large {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+    }
+  }
